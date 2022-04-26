@@ -34,7 +34,6 @@ async def cexec(ctx, *, body):
     ]
 )
 async def slash_cexec(ctx, *, body):
-	body = cleanup_code(body)
 	if os.path.isfile("./a.out"): os.system("rm -r ./a.out")
 	if os.path.isfile("./file1.c"): os.system("rm -r ./file1.c")
 	f = open("./file1.c", "w")
